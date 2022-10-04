@@ -84,10 +84,9 @@ public class Homework1 {
 
         for(final Integer f : integers){
             System.out.println(f);
-
-            if(f%2 == 0) System.out.println("The number is even\n");
-
-            if(f%3 == 0) System.out.println("Divisible by 3");
+            if(f%2 == 0 && f%3 == 0) System.out.println("The number is divisible by 3 and by 2");
+            else if(f%2 == 0) System.out.println("The number is even\n");
+            else if(f%3 == 0) System.out.println("Divisible by 3");
             else if (f%5 == 0) System.out.println("Divisible by 5");
         }
 
