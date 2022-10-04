@@ -51,7 +51,7 @@ public class Homework1 {
 
         String life = scanner.next();
 
-        if(life.toLowerCase(Locale.ROOT).equals("hong kong")){
+        if(life.toLowerCase(Locale.ROOT).equals("hong_kong")){
             System.out.println("Correct!");
             points +=10;
         } else {
@@ -76,21 +76,20 @@ public class Homework1 {
             System.out.println("Congratulations, you have earned: " + points + " points");
         }
 
-        // HOMEWORK2
+//        // HOMEWORK2
+//
+//        ArrayList<Integer> integers = new ArrayList<>();
+//
+//        for(int i = 0; i <= 100; i++) integers.add(randomNumber());
+//
+//        for(final Integer f : integers){
+//            System.out.println(f);
+//            if(f%2 == 0 && f%3 == 0) System.out.println("The number is divisible by 3 and by 2");
+//            else if(f%2 == 0) System.out.println("The number is even\n");
+//            else if(f%3 == 0) System.out.println("Divisible by 3");
+//            else if (f%5 == 0) System.out.println("Divisible by 5");
+//        }
 
-        ArrayList<Integer> integers = new ArrayList<>();
-
-        for(int i = 0; i <= 100; i++) integers.add(randomNumber());
-
-        for(final Integer f : integers){
-            System.out.println(f);
-            if(f%2 == 0 && f%3 == 0) System.out.println("The number is divisible by 3 and by 2");
-            else if(f%2 == 0) System.out.println("The number is even\n");
-            else if(f%3 == 0) System.out.println("Divisible by 3");
-            else if (f%5 == 0) System.out.println("Divisible by 5");
-        }
-
-        //Homework 3
     }
 
 
