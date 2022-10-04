@@ -62,5 +62,46 @@ public class Homework1 {
 
         int minutes = scanner.nextInt();
 
+        if(minutes == 10080){
+            System.out.println("Correct");
+
+            points += 10;
+        }  else{
+            System.out.println("Incorrect");
+        }
+
+        if(points < 30){
+            System.out.println("To my dismay, u have only earned: " + points + " points");
+        } else{
+            System.out.println("Congratulations, you have earned: " + points + " points");
+        }
+
+        // HOMEWORK2
+
+        ArrayList<Integer> integers = new ArrayList<>();
+
+        for(int i = 0; i <= 100; i++) integers.add(randomNumber());
+
+        for(final Integer f : integers){
+            System.out.println(f);
+
+            if(f%2 == 0) System.out.println("The number is even\n");
+
+            if(f%3 == 0) System.out.println("Divisible by 3");
+            else if (f%5 == 0) System.out.println("Divisible by 5");
+        }
+
+        //Homework 3
+    }
+
+
+
+     static int randomNumber(){
+
+        int return_number = 0;
+
+        return_number = (int) (Math.random() * 50 + 10);
+
+        return return_number;
     }
 }
